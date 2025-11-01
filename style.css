@@ -1,0 +1,241 @@
+.HEADER {
+  position: relative;
+  background-image: url("./assets/images/demo-it-business-banner-bg.jpg (1).webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Add a dark overlay */
+.HEADER::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust 0.3 for more or less darkness */
+  z-index: -1;
+}
+
+.navbar-nav li a{
+font-family: "Plus Jakarta Sans", Sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-link {
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #acb0b1 !important;  /* your custom hover color */
+}
+
+.nav-link.active {
+  color: #b3b1b1 !important;  /* your custom active color */
+}
+
+.btn-1:hover {
+  background-color: #ffffff !important;  /* your custom hover color */
+  color: #000000 !important;  /* your custom active color */
+}
+
+.hero-text{
+    font-size: 4.375rem;
+    font-weight: 500;
+    line-height: 4.375rem;
+    letter-spacing: -2px;
+}
+.hero-1 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(32, 32, 34, 0.9),  
+    rgba(40, 40, 44, 0.6),  /* lighter */
+    rgba(0, 0, 0, 0)   /* lightest */
+  );
+}
+.btn-contact {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 21px 42px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btn-contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-contact span {
+  display: inline-block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.btn-contact:hover span {
+  animation: bounceText 0.3s ease forwards;
+}
+
+@keyframes bounceText {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn-contact i {
+  margin-left: 3px;
+  transition: transform 0.1s ease;
+}
+
+.btn-contact:hover i {
+  transform: translateY(-3px);
+}
+
+
+.btn-explore {
+  color: white;
+  background: linear-gradient(
+    to right,
+   hsl(220, 73%, 47%),  
+    /* rgba(136, 136, 207, 0.6),  lighter */
+    rgb(184, 40, 40)   /* lightest */
+  );
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 21px 42px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  z-index: 1;
+}
+
+.btn-explore:hover {
+   background: linear-gradient(
+    to right,
+   hsl(357, 73%, 47%),  
+    /* rgba(136, 136, 207, 0.6),  lighter */
+    rgb(40, 74, 184)   /* lightest */
+  );
+  color: white;
+}
+
+.btn-explore span {
+  display: inline-block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.btn-explore:hover span {
+  animation: bounceText 0.3s ease forwards;
+}
+
+.btn-explore i {
+  margin-left: 3px;
+  transition: transform 0.1s ease;
+}
+
+.btn-explore:hover i {
+  transform: translateY(-3px);
+}
+
+
+
+.hero-section {
+  position: relative;
+  background: red;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.img-1{
+    position: absolute;
+    bottom: -92px;
+    right: 105px;
+    z-index: 2;
+}
+
+
+.hero-2 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(223, 42, 42, 0.9),  
+    rgba(202, 46, 46, 0.411),  /* lighter */
+    rgba(133, 68, 68, 0)   /* lightest */
+  );
+}
+
+.hero-3 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(37, 54, 206, 0.9),  
+    rgba(72, 72, 150, 0.6),  /* lighter */
+    rgba(55, 62, 126, 0)   /* lightest */
+  );
+}
+
+.company-img a img {
+  transition: filter 0.3s ease;
+}
+
+.company-img a:hover {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(0%) hue-rotate(170deg) brightness(90%) contrast(85%);
+}
+
+.services{
+    background-color: #f0f2f8;
+}
+
+
+.clients{
+    background-color: #252840;
+}
+
+.clients-card {
+  transition: background-color 0.3s ease; /* smooth animation */
+}
+
+.clients-card:hover {
+  background-color: #152bd4;
+}
