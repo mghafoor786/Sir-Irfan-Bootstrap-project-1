@@ -1,3 +1,4 @@
+/* ==================== HEADER SECTION ==================== */
 .HEADER {
   position: relative;
   background-image: url("./assets/images/demo-it-business-banner-bg.jpg (1).webp");
@@ -9,7 +10,7 @@
   z-index: 1;
 }
 
-/* Add a dark overlay */
+/* Add a dark overlay to the header background image */
 .HEADER::before {
   content: "";
   position: absolute;
@@ -21,12 +22,15 @@
   z-index: -1;
 }
 
+/* ==================== NAVIGATION STYLING ==================== */
+/* Navigation menu items font styling */
 .navbar-nav li a{
-font-family: "Plus Jakarta Sans", Sans-serif;
-    font-size: 17px;
-    font-weight: 500;
+  font-family: "Plus Jakarta Sans", Sans-serif;
+  font-size: 17px;
+  font-weight: 500;
 }
 
+/* Navigation link transitions and hover effects */
 .nav-link {
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
@@ -39,17 +43,14 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   color: #b3b1b1 !important;  /* your custom active color */
 }
 
+/* CTA button hover effect in navigation */
 .btn-1:hover {
   background-color: #ffffff !important;  /* your custom hover color */
   color: #000000 !important;  /* your custom active color */
 }
 
-.hero-text{
-    font-size: 4.375rem;
-    font-weight: 500;
-    line-height: 4.375rem;
-    letter-spacing: -2px;
-}
+/* ==================== HERO SECTION STYLING ==================== */
+/* Hero pill badge styling with gradient background */
 .hero-1 {
   font-size: 12px;
   font-weight: 400;
@@ -62,6 +63,9 @@ font-family: "Plus Jakarta Sans", Sans-serif;
     rgba(0, 0, 0, 0)   /* lightest */
   );
 }
+
+/* ==================== BUTTON STYLING ==================== */
+/* Contact button with hover animation */
 .btn-contact {
   color: white;
   background-color: transparent;
@@ -79,6 +83,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   color: black;
 }
 
+/* Text bounce animation on hover */
 .btn-contact span {
   display: inline-block;
   transition: transform 0.4s ease, opacity 0.4s ease;
@@ -107,6 +112,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   }
 }
 
+/* Icon animation on hover */
 .btn-contact i {
   margin-left: 3px;
   transition: transform 0.1s ease;
@@ -116,7 +122,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   transform: translateY(-3px);
 }
 
-
+/* Explore button with gradient background and hover effect */
 .btn-explore {
   color: white;
   background: linear-gradient(
@@ -145,6 +151,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   color: white;
 }
 
+/* Text bounce animation on hover */
 .btn-explore span {
   display: inline-block;
   transition: transform 0.4s ease, opacity 0.4s ease;
@@ -154,6 +161,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   animation: bounceText 0.3s ease forwards;
 }
 
+/* Icon animation on hover */
 .btn-explore i {
   margin-left: 3px;
   transition: transform 0.1s ease;
@@ -163,8 +171,8 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   transform: translateY(-3px);
 }
 
-
-
+/* ==================== HERO SECTION ELEMENTS ==================== */
+/* Hero section positioning */
 .hero-section {
   position: relative;
   background: red;
@@ -174,6 +182,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   justify-content: center;
 }
 
+/* Wave animation at bottom of hero section */
 .wave {
   position: absolute;
   bottom: 0;
@@ -181,14 +190,16 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   width: 100%;
   height: auto;
 }
+
+/* About section image positioning */
 .img-1{
-    position: absolute;
-    bottom: -92px;
-    right: 105px;
-    z-index: 2;
+  position: absolute;
+  bottom: -92px;
+  right: 105px;
+  z-index: 2;
 }
 
-
+/* Progress bar styling for business growth */
 .hero-2 {
   font-size: 12px;
   font-weight: 400;
@@ -202,6 +213,7 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   );
 }
 
+/* Progress bar styling for new technologies */
 .hero-3 {
   font-size: 12px;
   font-weight: 400;
@@ -215,6 +227,8 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   );
 }
 
+/* ==================== COMPANY/CLIENT SECTION ==================== */
+/* Company logo hover effect */
 .company-img a img {
   transition: filter 0.3s ease;
 }
@@ -223,15 +237,19 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(0%) hue-rotate(170deg) brightness(90%) contrast(85%);
 }
 
+/* ==================== SERVICES SECTION ==================== */
+/* Services section background color */
 .services{
-    background-color: #f0f2f8;
+  background-color: #f0f2f8;
 }
 
-
+/* ==================== CLIENTS SECTION ==================== */
+/* Clients section background color */
 .clients{
-    background-color: #252840;
+  background-color: #252840;
 }
 
+/* Client card hover effect */
 .clients-card {
   transition: background-color 0.3s ease; /* smooth animation */
 }
@@ -240,15 +258,17 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   background-color: #6574e27c;
 }
 
+/* ==================== TESTIMONIAL SECTION ==================== */
+/* Testimonial section background image */
 .trusted{
   background-image: url(./assets/images/demo-it-business-testimonial-bg.png);
 }
 
+/* ==================== SOLUTIONS SECTION ==================== */
+/* Solutions section with background image */
 .solutions{
   background-image: url(./assets/images/hjghjhjghjgh1.jpg);
-
   position: relative;
-  /* background-image: url("./assets/images/demo-it-business-banner-bg.jpg (1).webp"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -257,34 +277,170 @@ font-family: "Plus Jakarta Sans", Sans-serif;
   z-index: 1;
 }
 
-    .testimonial-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
+/* Testimonial slide styling */
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* Circular testimonial images */
+.testimonial-slide img.rounded-circle {
+  border-radius: 50%;
+}
+
+/* Swiper carousel dimensions */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==================== FILTER BUTTONS ==================== */
+/* Filter button styling for case studies */
+.filter-button-group button {
+  border: none;
+  background: #eee;
+  padding: 8px 15px;
+  margin-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-button-group button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ==================== MOBILE MENU OVERLAY ==================== */
+/* Overlay background for mobile menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(90, 101, 197, 0.89);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Show overlay when menu is open */
+.navbar.show-overlay .menu-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Make sure navbar sits above blur */
+.navbar .navbar-collapse {
+  z-index: 20;
+  position: relative;
+}
+
+/* ==================== NAVBAR SCROLL EFFECT ==================== */
+/* Navbar transition properties */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  background-color: transparent;
+}
+
+/* When scrolled - navbar changes appearance */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* ==================== RESPONSIVE STYLING ==================== */
+/* Hero content height adjustment */
+.hero-content{
+  height: 80vh;
+}
+
+/* Medium screens - adjust header and hero content height */
+@media (max-width: 992px) {
+  .HEADER {
+    height: 70vh;
   }
-
-  .testimonial-slide img.rounded-circle {
-    border-radius: 50%;
+  .hero-content{
+    height: 50vh;
   }
+}
 
-  .swiper {
-      width: 100%;
-      height: 100%;
-    }
+/* Logo width adjustment for larger screens */
+@media (min-width: 992px) {
+  .logo-img {
+    width: 50%;
+  }
+}
 
- .filter-button-group button {
-      border: none;
-      background: #eee;
-      padding: 8px 15px;
-      margin-right: 8px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+/* Hero pill width adjustments for different screen sizes */
+@media (max-width: 992px) {
+  .hero-1 {
+    width: 60% !important;
+  }
+  .img-1{
+    position: absolute;
+    bottom: -57px;
+    z-index: 2;
+  }
+  .Right-text{
+    margin-top: 80px;
+  }
+}
 
-    .filter-button-group button:hover {
-      background: #007bff;
-      color: #fff;
-    }
+@media (max-width: 576px) {
+  .hero-1 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .hero-1 {
+    width: 50% !important;
+  }
+}
+
+/* Client cards adjustments for small screens */
+@media (max-width: 576px) {
+  .clients-card {
+    padding: 0.5rem 0;
+  }
+  .clients-card .py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .clients-card i {
+    font-size: 1.5rem;
+  }
+  .clients-card p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}
+
+/* Adjust border for responsive layout of client cards */
+@media (max-width: 768px) {
+  .clients-card:nth-child(2n) {
+    border-right: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .clients-card:nth-child(3n) {
+    border-right: none !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .clients-card:nth-child(4n) {
+    border-right: none !important;
+  }
+}
