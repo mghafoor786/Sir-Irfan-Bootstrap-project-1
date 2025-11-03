@@ -1,3 +1,5 @@
+
+
 /* ==================== HEADER SECTION ==================== */
 .HEADER {
   position: relative;
@@ -8,6 +10,9 @@
   height: 100vh;
   width: 100%;
   z-index: 1;
+
+
+  
 }
 
 /* Add a dark overlay to the header background image */
@@ -365,13 +370,24 @@
 }
 
 /* Medium screens - adjust header and hero content height */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .HEADER {
     height: 70vh;
   }
   .hero-content{
     height: 50vh;
   }
+  .solutions{
+  height: 70vh;
+}
+.solutions-1{
+  height: 50vh;
+}
+}
+
+
+.solutions-1{
+  height: 100vh;
 }
 
 /* Logo width adjustment for larger screens */
@@ -379,6 +395,7 @@
   .logo-img {
     width: 50%;
   }
+
 }
 
 /* Hero pill width adjustments for different screen sizes */
